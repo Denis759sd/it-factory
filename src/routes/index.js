@@ -7,7 +7,7 @@ const auth = require('../middlewares/auth')
 const router = express.Router()
 
 router.use(`${apiBasePath}/auth`, require('./auth'))
-router.use(`${apiBasePath}/test`, auth, require('./test'))
+router.use(`${apiBasePath}/test`, require('./test'))
 router.use(`${apiBasePath}/users`, require('./users'))
 
 module.exports = router
