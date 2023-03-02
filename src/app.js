@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(routes)
 
-app.listen(config.get('port'), config.get('address'), () => {
-    console.log(`Server listens http://${config.get('address')}:${config.get('port')}`)
+app.listen(config.get('port'), config.get('host'), () => {
+    console.log(`Server listens http://${config.get('host')}:${config.get('port')}`)
 })
